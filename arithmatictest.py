@@ -20,4 +20,7 @@ class ArithmaticTest(unittest.TestCase):
 	def test_add_float_rval(self):
 		self.assertEqual(self.app.add([1.2, 2.1]), 3.3)
 
+	def test_add_empty_ite(self):
+		self.assertEqual(self.app.add([]), 0)
+
 unittest.main()

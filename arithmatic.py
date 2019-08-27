@@ -14,7 +14,7 @@
 
 
 class Arithmatic:
-	""" Arithmatic: an abstraction layer on the math lib """
+	""" Arithmatic: an abstraction layer on the arithmatic operators """
 
 	def __init__(self):
 		print("imported Arithmatic: successful")
@@ -22,15 +22,59 @@ class Arithmatic:
 	def add(self, iterable_arg):
 		"""
 		function: add
-		argument: iterable
+		argument: iterable: [int, float]
 		use: add([1,2,3,4,5])
 		description: returns the sum of the iterable, this is similar to sum
 		"""
 		try:
 			val_sum = 0
-			for i in iterable_arg:
-				val_sum += i
+			if len(iterable_arg) > 0:
+				for i in iterable_arg:
+					val_sum += i
+				
+				return val_sum
+			return val_sum
+		except Exception as e:
+			print(e)
+
+	def subtr(self, first_number, second_number):
+		"""
+		function: subtr
+		arguments: first_number:[int, float], second_number:[int, float]
+		use: subtr(1, 2.1)
+		description: returns the difference between first_number and second_number
+		"""
+		try:
+			return first_number - second_number
 		except Exception as e:
 			return e
-		finally:
-			return val_sum
+
+	def multi(self, iterable_arg):
+		"""
+		"""
+		pass
+
+	def div(self, first_number, second_number):
+		"""
+		"""
+		pass
+
+	def div_floor(self, first_number, second_number):
+		"""
+		"""
+		pass
+
+	def mod(self, first_number, second_number):
+		"""
+		"""
+		pass
+
+	def div_mod(self, first_number, second_number):
+		"""
+		"""
+		pass
+
+	def pow(self, first_number, second_number):
+		"""
+		"""
+		pass
