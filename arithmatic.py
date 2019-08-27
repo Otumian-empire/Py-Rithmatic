@@ -4,14 +4,10 @@
 # Library name: Arithmatic
 # Arithmatic: an abstraction layer on the math lib
 # 	Description:
+#		an abstraction layer on the arithmatic operators
 #		for basic arithmatic operations such as:
-# 	addition, subtraction, multiplication, division, floor division,
-# 	modulo, power
-# 	aside from that, it is the math std-lib
-# Resource:
-#		https://docs.python.org/3.6/library/math.html?highlight=math#module-math
-# 	https://timothybramlett.com/How_to_create_a_Python_Package_with___init__py.html
-
+# 		addition, subtraction, multiplication, division, floor division,
+# 		modulo, power
 
 class Arithmatic:
 	""" Arithmatic: an abstraction layer on the arithmatic operators """
@@ -104,7 +100,7 @@ class Arithmatic:
 		function: mod
 		arguments: first_number:[int, float], second_number:[int, float]
 		use: mod(1, 2.1)
-		description: returns the difference between first_number and second_number
+		description: returns the remainder when second_number divides first_number
 		"""
 		try:
 			if second_number:
@@ -114,12 +110,13 @@ class Arithmatic:
 		except Exception as e:
 			print(e)
 
-	def div_mod(self, first_number = 1, second_number = 1):
+	def div_mod(self, first_number = 0, second_number = 1):
 		"""
-		function: subtr
+		function: div_mod
 		arguments: first_number:[int, float], second_number:[int, float]
-		use: subtr(1, 2.1)
-		description: returns the difference between first_number and second_number
+		use: div_mod(1, 2.1)
+		description: returns a tuple of the quotient and  remainder when second_number divides first_number
+		returns `0` when first_number and second_number is not given
 		"""
 		try:
 			if second_number:
@@ -131,10 +128,12 @@ class Arithmatic:
 
 	def pow(self, first_number = 1, second_number = 0):
 		"""
-		function: subtr
+		function: pow
 		arguments: first_number:[int, float], second_number:[int, float]
-		use: subtr(1, 2.1)
-		description: returns the difference between first_number and second_number
+		use: pow(1, 2.1)
+		description: returns first_number raised to the exponent, second_number
+		By default, first_number = 1 and second_number = 0
+		returns `1` when first_number and second_number is not given
 		"""
 		try:
 			if first_number:
