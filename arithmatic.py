@@ -47,7 +47,7 @@ class Arithmatic:
 		try:
 			return first_number - second_number
 		except Exception as e:
-			return e
+			print(e)
 
 	def multi(self, iterable_arg):
 		"""

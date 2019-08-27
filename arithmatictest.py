@@ -42,4 +42,6 @@ class ArithmaticTest(unittest.TestCase):
 
 	def test_subtr_empty_args(self):
 		self.assertEqual(self.app.subtr(), 0)
+
+		
 unittest.main()
