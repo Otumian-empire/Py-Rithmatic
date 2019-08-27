@@ -12,15 +12,13 @@ class ArithmaticTest(unittest.TestCase):
 		self.assertTrue(type(self.app.add([1, 2]) == int))
 
 	def test_add_float_type(self):
-			self.assertTrue(type(self.app.add([1.2, 2.1]) == float))
-
+		self.assertTrue(type(self.app.add([1.2, 2.1]) == float))
 
 	def test_add_int_rval(self):
 		self.assertEqual(self.app.add([1, 2]), 3)
 
 	def test_add_float_rval(self):
 		self.assertEqual(self.app.add([1.2, 2.1]), 3.3)
-
 
 	def test_add_empty_ite(self):
 		self.assertEqual(self.app.add([]), 0)
@@ -30,8 +28,7 @@ class ArithmaticTest(unittest.TestCase):
 		self.assertTrue(type(self.app.subtr(2, 1) == int))
 
 	def test_subtr_float_type(self):
-			self.assertTrue(type(self.app.subtr(2.1, 1.2) == float))
-
+		self.assertTrue(type(self.app.subtr(2.1, 1.2) == float))
 	
 	def test_subtr_int_rval(self):
 		self.assertEqual(self.app.subtr(2, 1), 1)
@@ -39,9 +36,25 @@ class ArithmaticTest(unittest.TestCase):
 	def test_subtr_float_rval(self):
 		self.assertEqual(self.app.subtr(2.4, 1.2), 1.2) 
 
-
-	def test_subtr_empty_args(self):
+	def test_subtr_empty_args(self): 
 		self.assertEqual(self.app.subtr(), 0)
+	
+	
+	def test_multi_int_type(self):
+		self.assertTrue(type(self.app.multi([2, 1])) == int)
 
-		
+	def test_multi_float_type(self):
+		self.assertTrue(type(self.app.multi([2.1, 1.2])) == float)
+
+	def test_multi_int_rval(self):
+		self.assertEqual(self.app.multi([2, 1]), 2)
+
+	def test_multi_float_rval(self):
+		self.assertEqual(self.app.multi([2.4, 1.2]), 2.88) 
+
+	def test_multi_empty_args(self):
+		self.assertEqual(self.app.multi([]), 1)
+
+
+
 unittest.main()

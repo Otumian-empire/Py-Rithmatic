@@ -19,7 +19,7 @@ class Arithmatic:
 	def __init__(self):
 		print("imported Arithmatic: successful")
 
-	def add(self, iterable_arg):
+	def add(self, iterable_arg = []):
 		"""
 		function: add
 		argument: iterable: [int, float]
@@ -28,7 +28,7 @@ class Arithmatic:
 		"""
 		try:
 			val_sum = 0
-			if len(iterable_arg) > 0:
+			if iterable_arg:
 				for i in iterable_arg:
 					val_sum += i
 				
@@ -49,7 +49,7 @@ class Arithmatic:
 		except Exception as e:
 			print(e)
 
-	def multi(self, iterable_arg):
+	def multi(self, iterable_arg = []):
 		"""
 		function: multi
 		argument: iterable: [int, float]
@@ -58,7 +58,7 @@ class Arithmatic:
 		"""
 		try:
 			val_sum = 1
-			if len(iterable_arg) > 0:
+			if iterable_arg:
 				for i in iterable_arg:
 					val_sum *= i
 				
