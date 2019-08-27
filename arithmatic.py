@@ -67,27 +67,79 @@ class Arithmatic:
 		except Exception as e:
 			print(e)
 
-	def div(self, first_number, second_number):
+	def div(self, first_number = 0, second_number = 1):
 		"""
+		function: div
+		arguments: first_number:[int, float], second_number:[int, float]
+		use: div(1, 2.1)
+		description: returns a float when second_number divides first_number
+		By default, first_number = 0 and second_number = 1 (to prevent ZeroDivisionError)
 		"""
-		pass
+		try:
+			if second_number:
+				return first_number / second_number
+			else:
+				print(f"second_number given {second_number}, use an int/float gt {0.0!r}")
+		except Exception as e:
+			print(e)
 
-	def div_floor(self, first_number, second_number):
+	def div_floor(self, first_number = 0, second_number = 1):
 		"""
+		function: div_floor
+		arguments: first_number:[int, float], second_number:[int, float]
+		use: div_floor(1, 2.1)
+		description: returns the quotient (int) when second_number divides first_number
+		By default, first_number = 0 and second_number = 1 (to prevent ZeroDivisionError)
 		"""
-		pass
+		try:
+			if second_number:
+				return first_number // second_number
+			else:
+				print(f"second_number given {second_number}, use an int/float gt {0.0!r}")
+		except Exception as e:
+			print(e)
 
-	def mod(self, first_number, second_number):
+	def mod(self, first_number = 0, second_number = 1):
 		"""
+		function: mod
+		arguments: first_number:[int, float], second_number:[int, float]
+		use: mod(1, 2.1)
+		description: returns the difference between first_number and second_number
 		"""
-		pass
+		try:
+			if second_number:
+				return first_number % second_number
+			else:
+				print(f"second_number given {second_number}, use an int/float gt {0.0!r}")
+		except Exception as e:
+			print(e)
 
-	def div_mod(self, first_number, second_number):
+	def div_mod(self, first_number = 1, second_number = 1):
 		"""
+		function: subtr
+		arguments: first_number:[int, float], second_number:[int, float]
+		use: subtr(1, 2.1)
+		description: returns the difference between first_number and second_number
 		"""
-		pass
+		try:
+			if second_number:
+				return (first_number // second_number) , (first_number % second_number)
+			else:
+				print(f"second_number given {second_number}, use an int/float gt {0.0!r}")
+		except Exception as e:
+			print(e)
 
-	def pow(self, first_number, second_number):
+	def pow(self, first_number = 1, second_number = 0):
 		"""
+		function: subtr
+		arguments: first_number:[int, float], second_number:[int, float]
+		use: subtr(1, 2.1)
+		description: returns the difference between first_number and second_number
 		"""
-		pass
+		try:
+			if first_number:
+				return first_number ** second_number
+			else:
+				print(f"first_number given {first_number}, use an int/float gt {0.0!r}")
+		except Exception as e:
+			print(e)
