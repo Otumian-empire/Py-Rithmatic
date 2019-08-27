@@ -37,7 +37,7 @@ class Arithmatic:
 		except Exception as e:
 			print(e)
 
-	def subtr(self, first_number, second_number):
+	def subtr(self, first_number = 0, second_number = 0):
 		"""
 		function: subtr
 		arguments: first_number:[int, float], second_number:[int, float]
