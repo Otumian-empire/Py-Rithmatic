@@ -51,8 +51,21 @@ class Arithmatic:
 
 	def multi(self, iterable_arg):
 		"""
+		function: multi
+		argument: iterable: [int, float]
+		use: multi([1,2,3,4,5])
+		description: returns the product of elements in the iterable.
 		"""
-		pass
+		try:
+			val_sum = 1
+			if len(iterable_arg) > 0:
+				for i in iterable_arg:
+					val_sum *= i
+				
+				return val_sum
+			return val_sum
+		except Exception as e:
+			print(e)
 
 	def div(self, first_number, second_number):
 		"""
