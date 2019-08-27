@@ -14,23 +14,23 @@
 
 
 class Arithmatic:
-    """ Arithmatic: an abstraction layer on the math lib """
+	""" Arithmatic: an abstraction layer on the math lib """
 
-    def __init__(self):
-        print("imported Arithmatic: successful")
+	def __init__(self):
+		print("imported Arithmatic: successful")
 
-    def add(self, iterable_arg):
-        """
-        function: add
-        argument: iterable
-        use: add([1,2,3,4,5])
-        description: returns the sum of the iterable, this is similar to sum
-        """
-        try:
-            val_sum = 0
-            for i in iterable_arg:
-                val_sum += i
-        except Exception as e:
-            return e
-        finally:
-            return val_sum
+	def add(self, iterable_arg):
+		"""
+		function: add
+		argument: iterable
+		use: add([1,2,3,4,5])
+		description: returns the sum of the iterable, this is similar to sum
+		"""
+		try:
+			val_sum = 0
+			for i in iterable_arg:
+				val_sum += i
+		except Exception as e:
+			return e
+		finally:
+			return val_sum
