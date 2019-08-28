@@ -27,7 +27,6 @@ class ArithmaticTest(unittest.TestCase):
 		self.assertEqual(self.app.add(), 0)
 		
 
-
 	def test_subtr_int_type(self):
 		self.assertTrue(type(self.app.subtr(2, 1) == int))
 
@@ -90,6 +89,15 @@ class ArithmaticTest(unittest.TestCase):
 
 	
 	def test_mod_int_type(self):
-		self.assertTrue(self.app.mod(23, 4), int)
+		self.assertTrue(type(self.app.mod(23, 4)), int)
+
+	def test_mod_int_rval(self):
+		self.assertEqual(self.app.mod(23, 4), 3)
+
+	def test_mod_empty_args(self):
+		self.assertEqual(self.app.mod(), 0)
+
+	def test_mod_zero_division(self):
+		self.assertEqual(self.app.mod(23, 0), 0)
 
 unittest.main()
