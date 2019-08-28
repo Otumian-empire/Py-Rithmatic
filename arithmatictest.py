@@ -68,4 +68,17 @@ class ArithmaticTest(unittest.TestCase):
 	def test_div_epmty_args(self):
 		self.assertEqual(self.app.div(), 0)
 
+	def test_epmty_args(self):
+		self.assertEqual(self.app.div(1, 0), 0)
+
+
+	def test_divfloor_int_type(self):
+		self.assertTrue(type(self.app.div_floor(5, 2)), int)
+
+	def test_divfloor_float_rval(self):
+		self.assertEqual(self.app.div_floor(5, 2), 2)
+
+	def test_divfloor_epmty_args(self):
+		self.assertEqual(self.app.div_floor(1, 0), 0)
+
 unittest.main()

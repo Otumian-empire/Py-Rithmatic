@@ -76,6 +76,7 @@ class Arithmatic:
 				return first_number / second_number
 			else:
 				print(f"second_number given {second_number}, use an int/float gt {0.0!r}")
+				return 0
 		except Exception as e:
 			print(e)
 
@@ -92,6 +93,7 @@ class Arithmatic:
 				return first_number // second_number
 			else:
 				print(f"second_number given {second_number}, use an int/float gt {0.0!r}")
+				return 0
 		except Exception as e:
 			print(e)
 
