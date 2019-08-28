@@ -69,6 +69,9 @@ class ArithmaticTest(unittest.TestCase):
 		self.assertEqual(self.app.div(), 0)
 
 	def test_epmty_args(self):
+		self.assertEqual(self.app.div(), 0)
+
+	def test_div_zero_division(self):
 		self.assertEqual(self.app.div(1, 0), 0)
 
 
@@ -79,6 +82,9 @@ class ArithmaticTest(unittest.TestCase):
 		self.assertEqual(self.app.div_floor(5, 2), 2)
 
 	def test_divfloor_epmty_args(self):
-		self.assertEqual(self.app.div_floor(1, 0), 0)
+		self.assertEqual(self.app.div_floor(), 0)
+
+	def test_divfloor_zero_division(self):
+		self.assertEqual(self.app.div(1, 0), 0)
 
 unittest.main()
