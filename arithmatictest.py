@@ -72,9 +72,6 @@ class ArithmaticTest(unittest.TestCase):
 	def test_div_epmty_args(self):
 		self.assertEqual(self.app.div(), 0)
 
-	def test_epmty_args(self):
-		self.assertEqual(self.app.div(), 0)
-
 	def test_div_zero_division(self):
 		self.assertEqual(self.app.div(1, 0), 0)
 

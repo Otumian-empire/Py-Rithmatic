@@ -20,7 +20,7 @@
 		use: `add([1,2,3,4,5])`
 		description: returns the sum of elements in the iterable_arg, this is similar to sum
         By default iterable_arg is an empty list
-        returns `0` when empty iterable_arg
+        returns `0` when empty iterable_arg or no passed
 
 1. **subtr:** function: subtr
 		arguments: first_number:[int, float], second_number:[int, float]
