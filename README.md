@@ -1,7 +1,9 @@
 # Arithmatic Module
 <span>an abstraction layer on the arithmatic operators</span>
+
 ## Class
 1. Arithmatic
+
 ## Methods
 1. add
 1. subtr
@@ -11,6 +13,7 @@
 1. mod
 1. div_mod
 1. pow
+
 ## Method Description
 1. **add:** function: add
 		argument: `iterable_arg: [int, float]`
