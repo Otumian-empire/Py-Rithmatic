@@ -59,7 +59,7 @@ class Arithmatic:
 					val_sum *= i
 				
 				return val_sum
-			return val_sum
+			return 0
 		except Exception as e:
 			print(e)
 

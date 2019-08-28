@@ -53,9 +53,10 @@ class ArithmaticTest(unittest.TestCase):
 		self.assertEqual(self.app.multi([2.4, 1.2]), 2.88) 
 
 	def test_multi_empty_args(self):
-		self.assertEqual(self.app.multi([]), 1)
+		self.assertEqual(self.app.multi([]), 0)
 
-	# create a test for no args
+	def test_multi_no_args(self):
+		self.assertEqual(self.app.multi(), 0)
 
 
 	def test_div_float_type(self):

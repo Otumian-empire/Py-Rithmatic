@@ -34,7 +34,7 @@
 		use: multi([1,2,3,4,5])
 		description: returns the product of elements in the iterable_arg.
         By default iterable_arg is an empty list
-        returns `1` when the iterable_arg is empty
+        returns `0` when the iterable_arg is empty or not provided
 
 1. **div:** function: div
 		arguments: first_number:[int, float], second_number:[int, float]
