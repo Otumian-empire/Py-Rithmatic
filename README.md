@@ -70,4 +70,5 @@
 		use: pow(1, 2.1)
 		description: returns first_number raised to the exponent, second_number
 		By default, first_number = 1 and second_number = 0
-		returns `1` when first_number and second_number is not given
+		returns `0` when first_number and second_number is not given
+		This is similar to the `math.pow` in `math` module. I like to maintain that `Arithmatic.pow(0, 0)` is `0` - undefined

@@ -123,4 +123,8 @@ class ArithmaticTest(unittest.TestCase):
 	def test_pow_empty_args(self):
 		self.assertEqual(self.app.pow(), 1)
 
+	def test_pow_zero_base(self):
+		self.assertEqual(self.app.pow(0, 5), 0)
+
+
 unittest.main()
