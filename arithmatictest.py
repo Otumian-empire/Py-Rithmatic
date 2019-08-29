@@ -100,4 +100,17 @@ class ArithmaticTest(unittest.TestCase):
 	def test_mod_zero_division(self):
 		self.assertEqual(self.app.mod(23, 0), 0)
 
+
+	def test_divmod_int_type(self):
+		self.assertTrue(type(self.app.div_mod(23, 4)), tuple)
+
+	def test_divmod_int_rval(self):
+		self.assertEqual(self.app.div_mod(23, 4), (5, 3))
+
+	def test_divmod_empty_args(self):
+		self.assertEqual(self.app.div_mod(), (0, 0))
+
+	def test_divmod_zero_division(self):
+		self.assertEqual(self.app.div_mod(23, 0), (0, 0))
+
 unittest.main()
