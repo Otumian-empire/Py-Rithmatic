@@ -113,4 +113,14 @@ class ArithmaticTest(unittest.TestCase):
 	def test_divmod_zero_division(self):
 		self.assertEqual(self.app.div_mod(23, 0), (0, 0))
 
+	
+	def test_pow_int_type(self):
+		self.assertTrue(type(self.app.pow(2, 3)), int)
+
+	def test_pow_int_rval(self):
+		self.assertEqual(self.app.pow(2, 3), 8)
+
+	def test_pow_empty_args(self):
+		self.assertEqual(self.app.pow(), 1)
+
 unittest.main()
