@@ -61,7 +61,7 @@
 1. **div_mod:** function: div_mod
 		arguments: first_number:[int, float], second_number:[int, float]
 		use: div_mod(1, 2.1)
-		description: returns a tuple of the quotient and  remainder when second_number divides first_number
+		description: returns a tuple, of the quotient and  remainder when second_number divides first_number
         returns `(0, 0)` when first_number and second_number is not given and `ZeroDivisionError` occurs
 		By default, first_number = 0 and second_number = 1 (to prevent ZeroDivisionError)
 

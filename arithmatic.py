@@ -20,7 +20,7 @@ class Arithmatic:
 		function: add
 		argument: iterable: [int, float]
 		use: add([1,2,3,4,5])
-		description: returns the sum of the iterable, this is similar to sum
+		description: returns the sum of elements in the iterable_arg, this is similar to sum
 		"""
 		try:
 			val_sum = 0
@@ -69,7 +69,6 @@ class Arithmatic:
 		arguments: first_number:[int, float], second_number:[int, float]
 		use: div(1, 2.1)
 		description: returns a float when second_number divides first_number
-		By default, first_number = 0 and second_number = 1 (to prevent ZeroDivisionError)
 		"""
 		try:
 			if second_number:
@@ -86,7 +85,7 @@ class Arithmatic:
 		arguments: first_number:[int, float], second_number:[int, float]
 		use: div_floor(1, 2.1)
 		description: returns the quotient (int) when second_number divides first_number
-		By default, first_number = 0 and second_number = 1 (to prevent ZeroDivisionError)
+		pow
 		"""
 		try:
 			if second_number:
@@ -102,7 +101,7 @@ class Arithmatic:
 		function: mod
 		arguments: first_number:[int, float], second_number:[int, float]
 		use: mod(1, 2.1)
-		description: returns the remainder when second_number divides first_number
+		description: returns a remainder when second_number divides first_number
 		"""
 		try:
 			if second_number:
@@ -118,8 +117,7 @@ class Arithmatic:
 		function: div_mod
 		arguments: first_number:[int, float], second_number:[int, float]
 		use: div_mod(1, 2.1)
-		description: returns a tuple of the quotient and  remainder when second_number divides first_number
-		returns `0` when first_number and second_number is not given
+		description: returns a tuple, of the quotient and  remainder when second_number divides first_number
 		"""
 		try:
 			if second_number:
@@ -136,8 +134,6 @@ class Arithmatic:
 		arguments: first_number:[int, float], second_number:[int, float]
 		use: pow(1, 2.1)
 		description: returns first_number raised to the exponent, second_number
-		By default, first_number = 1 and second_number = 0
-		returns `1` when first_number and second_number is not given
 		"""
 		try:
 			if first_number:
