@@ -1,13 +1,13 @@
-# Author: Otumian (Empire)
+# Author: Otumian [-Empire]
 # Github account: https://github.com/Otumian-empire
 # Email: popecan1000@gmail.com
 # Library name: Arithmatic
-# Arithmatic: an abstraction layer on the math lib
-# 	Description:
-#		an abstraction layer on the arithmatic operators
-#		for basic arithmatic operations such as:
-# 		addition, subtraction, multiplication, division, floor division,
-# 		modulo, power
+# Repository url" https://github.com/Otumian-empire/pyrithmatic.git
+# Description:
+# 	an abstraction layer on the arithmatic operators
+# 	for basic arithmatic operations such as:
+# 	addition, subtraction, multiplication, division, floor division,
+# 	modulo, power
 
 class Arithmatic:
 	""" Arithmatic: an abstraction layer on the arithmatic operators """
